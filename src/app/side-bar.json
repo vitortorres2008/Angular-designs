@@ -1,0 +1,51 @@
+{
+    "historyVersion": {
+        "lastWeek": [{
+            "versionName": "version",
+            "versionDate": "18/08/2021"
+        }],
+        "thisMonth": [{
+                "versionName": "version",
+                "versionDate": "18/08/2021",
+                "openModal": false
+            },
+            {
+                "versionName": "version",
+                "versionDate": "18/08/2021",
+                "openModal": false
+            }
+        ],
+        "lastMonth": [{
+                "versionName": "version",
+                "versionDate": "18/08/2021",
+                "openModal": false
+            },
+            {
+                "versionName": "version",
+                "versionDate": "18/08/2021",
+                "openModal": false
+            },
+            {
+                "versionName": "version",
+                "versionDate": "18/08/2021",
+                "openModal": false
+            },
+            {
+                "versionName": "version",
+                "versionDate": "18/08/2021",
+                "openModal": false
+            }
+        ],
+        "anotherMonth": [{
+                "versionName": "version",
+                "versionDate": "18/08/2021",
+                "openModal": false
+            },
+            {
+                "versionName": "version",
+                "versionDate": "18/08/2021",
+                "openModal": false
+            }
+        ]
+    }
+}

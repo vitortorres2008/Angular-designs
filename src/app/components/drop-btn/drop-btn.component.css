@@ -1,0 +1,21 @@
+@import '~bootstrap/dist/css/bootstrap.min.css';
+.dropdown {
+    float: right;
+    padding: 4px;
+}
+
+.dropdown-menu {
+    position: relative;
+    top: -20px;
+    left: -170px;
+    height: 66px;
+}
+
+.dropdown-item {
+    text-align: center;
+    justify-content: center;
+    padding-bottom: 1px;
+    padding-top: 1px;
+    font-size: 9px;
+    height: 18px;
+}

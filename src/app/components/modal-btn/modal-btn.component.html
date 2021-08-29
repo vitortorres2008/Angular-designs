@@ -1,0 +1,11 @@
+<div class="modal-header">
+    <h3 class="modal-title">Restore this version?</h3>
+</div>
+<div class="modal-body">
+    <p>Your current project will revert to this previous version from {{ someDate }}</p>
+    <p>This project will be saved as {{ projectName }}</p>
+</div>
+<div class="modal-footer">
+    <button type="button" class="btn btn-outline-secondary" (click)="onCancel()">CANCEL</button>
+    <button type="button" class="btn btn-danger" (click)="onRestore()">RESTORE</button>
+</div>

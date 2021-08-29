@@ -1,0 +1,65 @@
+<body class="sideBar">
+    <p class="title">Version History</p>
+    <p class="last-week">&nbsp;LAST WEEK</p>
+    <a href="#">
+        <div class="block-opt" *ngFor="let item of objjson.historyVersion.lastWeek">
+            &nbsp;&nbsp;<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-caret-right-fill" viewBox="0 0 16 16">
+                <path
+                    d="m12.14 8.753-5.482 4.796c-.646.566-1.658.106-1.658-.753V3.204a1 1 0 0 1 1.659-.753l5.48 4.796a1 1 0 0 1 0 1.506z" />
+            </svg> {{ item.versionName }}
+            <app-drop-btn></app-drop-btn>
+            <div class="date">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{{ item.versionDate }}</div>
+            <div class="current">
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Current Version
+            </div>
+            <ul>
+                <li>Responsible Editor</li>
+            </ul>
+        </div>
+    </a>
+    <p class="last-month">&nbsp;THIS MONTH</p>
+    <a href="#">
+        <div class="block-opt" (click)="openModal(item)" *ngFor="let item of objjson.historyVersion.thisMonth">
+            &nbsp;&nbsp;<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-caret-right-fill" viewBox="0 0 16 16">
+                <path
+                    d="m12.14 8.753-5.482 4.796c-.646.566-1.658.106-1.658-.753V3.204a1 1 0 0 1 1.659-.753l5.48 4.796a1 1 0 0 1 0 1.506z" />
+            </svg> {{ item.versionName }}
+            <app-drop-btn></app-drop-btn>
+            <div class="date">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{{ item.versionDate }}</div>
+            <ul>
+                <li>Responsible Editor</li>
+            </ul>
+            <div class="display" *ngIf="item.openModal"><button style="height: 40px;" type="button" class="btn btn-outline-primary" (click)="restoreVersion()">RESTORE THIS VERSION</button></div>
+        </div>
+    </a>
+    <p class="last-month">&nbsp;LAST MONTH</p>
+    <a href="#">
+        <div class="block-opt" (click)="openModal(item)" *ngFor="let item of objjson.historyVersion.lastMonth">
+            &nbsp;&nbsp;<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-caret-right-fill" viewBox="0 0 16 16">
+                <path
+                    d="m12.14 8.753-5.482 4.796c-.646.566-1.658.106-1.658-.753V3.204a1 1 0 0 1 1.659-.753l5.48 4.796a1 1 0 0 1 0 1.506z" />
+            </svg> {{ item.versionName }}
+            <app-drop-btn></app-drop-btn>
+            <div class="date">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{{ item.versionDate }}</div>
+            <ul>
+                <li>Responsible Editor</li>
+            </ul>
+            <div class="display" *ngIf="item.openModal"><button style="height: 40px;" type="button" class="btn btn-outline-primary" (click)="restoreVersion()">RESTORE THIS VERSION</button></div>
+        </div>
+    </a>
+    <p class="last-month">&nbsp;ANOTHER MONTH</p>
+    <a href="#">
+        <div class="block-opt" (click)="openModal(item)" *ngFor="let item of objjson.historyVersion.anotherMonth">
+            &nbsp;&nbsp;<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-caret-right-fill" viewBox="0 0 16 16">
+                <path
+                    d="m12.14 8.753-5.482 4.796c-.646.566-1.658.106-1.658-.753V3.204a1 1 0 0 1 1.659-.753l5.48 4.796a1 1 0 0 1 0 1.506z" />
+            </svg> {{ item.versionName }}
+            <app-drop-btn></app-drop-btn>
+            <div class="date">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{{ item.versionDate }}</div>
+            <ul>
+                <li>Responsible Editor</li>
+            </ul>
+            <div class="display" *ngIf="item.openModal"><button style="height: 40px;" type="button" class="btn btn-outline-primary" (click)="restoreVersion()">RESTORE THIS VERSION</button></div>
+        </div>
+    </a>
+</body>
